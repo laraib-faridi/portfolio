@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laraib Faridi | Software Engineer &amp; Web Developer Portfolio</title>
+<meta name="description" content="Professional portfolio of Laraib Faridi, Software Engineer and Web Developer specializing in frontend development, UI engineering, and web applications.">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Favicon -->
+<link rel="icon" href="images/favicon.png" type="image/png">
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<!-- ===================== LOADING SCREEN ===================== -->
+<div class="loader" id="loader">
+  <div class="loader-mark">
+    <span class="loader-bracket">&lt;</span>
+    <span class="loader-letters">LF</span>
+    <span class="loader-bracket">/&gt;</span>
+  </div>
+  <div class="loader-bar"><span></span></div>
+</div>
+
+<!-- ===================== SCROLL PROGRESS ===================== -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- ===================== CUSTOM CURSOR (desktop) ===================== -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- ===================== MOUSE GLOW ===================== -->
+<div class="mouse-glow" id="mouseGlow"></div>
+
+<!-- ===================== NAVBAR ===================== -->
+<header class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="#home" class="logo">Laraib<span>Faridi</span></a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#portfolio" class="nav-link">Portfolio</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#education" class="nav-link">Education</a>
+      <a href="#testimonials" class="nav-link">Testimonials</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== HERO SECTION ===================== -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <div class="hero-grid"></div>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+  </div>
+
+  <div class="container hero-container">
+    <div class="hero-text" data-reveal>
+      <p class="hero-eyebrow">Hello, I'm</p>
+      <h1 class="hero-name">Laraib Faridi</h1>
+      <h2 class="hero-role">
+        <span>I'm a </span><span class="typed-text" id="typedText"></span><span class="cursor-blink">|</span>
+      </h2>
+      <p class="hero-desc">
+        I design and build fast, accessible, and elegant digital products —
+        from corporate web platforms to modern web applications — with clean code
+        and a strong eye for detail.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#contact" class="btn btn-primary ripple">Hire Me</a>
+        <a href="assets/Laraib_Faridi_CV.pdf" class="btn btn-outline ripple" download>Download CV</a>
+        <a href="assets/Laraib_Faridi_CV.pdf" class="btn btn-ghost ripple" target="_blank" rel="noopener noreferrer">View Resume</a>
+        <a href="#contact" class="btn btn-ghost ripple">Contact Me</a>
+      </div>
+
+      <div class="hero-socials">
+        <a href="#" aria-label="GitHub" class="social-icon"><svg viewBox="0 0 24 24"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.1 3.29 9.4 7.86 10.94.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.1-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.69 5.4-5.25 5.69.41.36.78 1.08.78 2.17 0 1.57-.01 2.83-.01 3.22 0 .3.2.66.79.55A10.51 10.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg></a>
+        <a href="#" aria-label="LinkedIn" class="social-icon"><svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a>
+        <a href="#" aria-label="Twitter/X" class="social-icon"><svg viewBox="0 0 24 24"><path d="M18.9 2H22l-7.4 8.5L23.3 22h-6.8l-5.3-6.9L4.9 22H1.8l7.9-9.1L1 2h7l4.8 6.3L18.9 2zm-1.2 18h1.9L7.4 4h-2l12.3 16z"/></svg></a>
+        <a href="https://wa.me/923243263237" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="social-icon"><svg viewBox="0 0 24 24"><path d="M12 .5A11.5 11.5 0 0 0 1.9 17.4L.5 23.5l6.25-1.64A11.5 11.5 0 1 0 12 .5zm0 21a9.4 9.4 0 0 1-4.8-1.3l-.34-.2-3.7.97.99-3.6-.22-.37A9.45 9.45 0 1 1 12 21.5zm5.2-7.05c-.28-.14-1.66-.82-1.92-.91-.26-.1-.45-.14-.64.14-.19.28-.73.91-.9 1.1-.16.19-.33.21-.61.07-.28-.14-1.19-.44-2.27-1.4-.84-.75-1.4-1.67-1.57-1.95-.16-.28-.02-.43.12-.57.13-.13.28-.33.42-.5.14-.16.19-.28.28-.47.1-.19.05-.35-.02-.5-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.48-.64-.49-.16-.01-.35-.01-.55-.01-.19 0-.5.07-.76.35-.26.28-1 1-1 2.42 0 1.43 1.02 2.82 1.17 3.01.14.19 2.01 3.08 4.88 4.31.68.29 1.22.47 1.63.6.68.22 1.31.19 1.8.11.55-.08 1.66-.68 1.9-1.33.23-.66.23-1.22.16-1.33-.07-.12-.26-.19-.54-.33z"/></svg></a>
+      </div>
+    </div>
+
+    <div class="hero-image" data-reveal>
+      <div class="hero-image-glass">
+        <img src="images/profile.jpg" alt="Laraib Faridi profile photo" onerror="this.src='https://placehold.co/500x600/2563EB/F8FAFC?text=Laraib+Faridi'">
+      </div>
+      <div class="hero-badge hero-badge-1">Software Engineering & IT</div>
+      <!-- <div class="hero-badge hero-badge-2">20+ Projects Delivered</div> -->
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-down" aria-label="Scroll down">
+    <span></span>
+  </a>
+</section>
+
+<!-- ===================== ABOUT SECTION ===================== -->
+<section class="about section" id="about">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <p class="section-eyebrow">About Me</p>
+      <h2 class="section-title">Building thoughtful software, one detail at a time</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-image" data-reveal>
+        <div class="about-image-frame">
+          <img src="images/about.jpg" alt="Laraib Faridi working" onerror="this.src='https://placehold.co/480x520/0F172A/38BDF8?text=About+Me'">
+        </div>
+        <div class="about-counter-card">
+          <div class="counter" data-count="5">0</div>
+          <p>Years of Experience</p>
+        </div>
+      </div>
+
+      <div class="about-content" data-reveal>
+        <h3>Professional Summary</h3>
+        <p>
+          I'm a dedicated Software Engineer and Web Developer with a passion for crafting
+          reliable, scalable, and visually refined digital products. My background spans
+          frontend engineering, UI development, and full-stack web applications for
+          corporate, finance, and administrative sectors.
+        </p>
+
+        <h3>Career Objective</h3>
+        <p>
+          To contribute my technical expertise and creative problem-solving to a forward-thinking
+          organization, while continuously growing as an engineer and delivering measurable value
+          through clean, maintainable code.
+        </p>
+
+        <div class="about-strengths">
+          <div class="strength-item"><span class="dot"></span>Clean &amp; scalable code architecture</div>
+          <div class="strength-item"><span class="dot"></span>Pixel-perfect responsive design</div>
+          <div class="strength-item"><span class="dot"></span>Strong communication &amp; teamwork</div>
+          <div class="strength-item"><span class="dot"></span>Detail-oriented problem solving</div>
+        </div>
+
+        <div class="about-counters">
+          <div class="mini-counter">
+            <span class="counter" data-count="45">0</span>+
+            <p>Projects</p>
+          </div>
+          <div class="mini-counter">
+            <span class="counter" data-count="30">0</span>+
+            <p>Clients</p>
+          </div>
+          <div class="mini-counter">
+            <span class="counter" data-count="12">0</span>
+            <p>Certificates</p>
+          </div>
+        </div>
+
+        <a href="#contact" class="btn btn-primary ripple">Let's Talk</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SKILLS SECTION ===================== -->
+<section class="skills section section-alt" id="skills">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <p class="section-eyebrow">Skills</p>
+      <h2 class="section-title">Tools &amp; technologies I work with</h2>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-block" data-reveal>
+        <h3>Technical Skills</h3>
+        <div class="skill-bars">
+          <div class="skill-bar" data-percent="95"><div class="skill-bar-head"><span>HTML5</span><em>0%</em></div><div class="bar-track"><div class="bar-fill"></div></div></div>
+          <div class="skill-bar" data-percent="90"><div class="skill-bar-head"><span>CSS3</span><em>0%</em></div><div class="bar-track"><div class="bar-fill"></div></div></div>
+          <div class="skill-bar" data-percent="88"><div class="skill-bar-head"><span>JavaScript</span><em>0%</em></div><div class="bar-track"><div class="bar-fill"></div></div></div>
+          <div class="skill-bar" data-percent="85"><div class="skill-bar-head"><span>Bootstrap</span><em>0%</em></div><div class="bar-track"><div class="bar-fill"></div></div></div>
+          <div class="skill-bar" data-percent="80"><div class="skill-bar-head"><span>PHP</span><em>0%</em></div><div class="bar-track"><div class="bar-fill"></div></div></div>
+          <div class="skill-bar" data-percent="82"><div class="skill-bar-head"><span>MySQL</span><em>0%</em></div><div class="bar-track"><div class="bar-fill"></div></div></div>
+          <div class="skill-bar" data-percent="88"><div class="skill-bar-head"><span>Git</span><em>0%</em></div><div class="bar-track"><div class="bar-fill"></div></div></div>
+          <div class="skill-bar" data-percent="90"><div class="skill-bar-head"><span>GitHub</span><em>0%</em></div><div class="bar-track"><div class="bar-fill"></div></div></div>
+        </div>
+      </div>
+
+      <div class="skill-side" data-reveal>
+        <div class="skill-card-group">
+          <h3>Tools</h3>
+          <div class="tool-cards">
+            <div class="tool-card"><span>🎨</span>Photoshop</div>
+            <div class="tool-card"><span>💻</span>VS Code</div>
+            <div class="tool-card"><span>📊</span>MS Office</div>
+          </div>
+        </div>
+
+        <div class="skill-card-group">
+          <h3>Soft Skills</h3>
+          <div class="chip-group">
+            <span class="chip">Communication</span>
+            <span class="chip">Teamwork</span>
+            <span class="chip">Problem Solving</span>
+            <span class="chip">Time Management</span>
+            <span class="chip">Leadership</span>
+          </div>
+        </div>
+
+        <div class="skill-card-group">
+          <h3>Languages</h3>
+          <div class="lang-group">
+            <div class="lang-item"><span>English</span><div class="lang-dots"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div></div>
+            <div class="lang-item"><span>Urdu</span><div class="lang-dots"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SERVICES SECTION ===================== -->
+<section class="services section" id="services">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <p class="section-eyebrow">Services</p>
+      <h2 class="section-title">What I can do for you</h2>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card" data-reveal>
+        <div class="service-icon">🖥️</div>
+        <h3>Frontend Development</h3>
+        <p>Building fast, interactive, and accessible user interfaces using modern HTML, CSS and JavaScript.</p>
+      </div>
+      <div class="service-card" data-reveal>
+        <div class="service-icon">📱</div>
+        <h3>Responsive Website Design</h3>
+        <p>Designing websites that look and perform beautifully across desktop, tablet, and mobile devices.</p>
+      </div>
+      <div class="service-card" data-reveal>
+        <div class="service-icon">🎯</div>
+        <h3>UI Development</h3>
+        <p>Crafting elegant, intuitive interfaces with attention to typography, spacing, and micro-interactions.</p>
+      </div>
+      <div class="service-card" data-reveal>
+        <div class="service-icon">⚙️</div>
+        <h3>Web Application Development</h3>
+        <p>Developing dynamic, database-driven web applications tailored to business requirements.</p>
+      </div>
+      <div class="service-card" data-reveal>
+        <div class="service-icon">🎨</div>
+        <h3>Photoshop Design</h3>
+        <p>Creating polished graphics, banners, and UI mockups using Adobe Photoshop.</p>
+      </div>
+      <div class="service-card" data-reveal>
+        <div class="service-icon">🛠️</div>
+        <h3>Website Maintenance</h3>
+        <p>Providing ongoing support, updates, and performance optimization for existing websites.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PORTFOLIO SECTION ===================== -->
+<section class="portfolio section section-alt" id="portfolio">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <p class="section-eyebrow">Portfolio</p>
+      <h2 class="section-title">Selected projects</h2>
+    </div>
+
+    <div class="portfolio-filters" data-reveal>
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="web">Web App</button>
+      <button class="filter-btn" data-filter="ui">UI Design</button>
+      <button class="filter-btn" data-filter="corporate">Corporate</button>
+    </div>
+
+    <div class="portfolio-grid" id="portfolioGrid">
+      <div class="project-card" data-category="web" data-reveal>
+        <div class="project-image"><img src="images/project1.jpg" alt="Finance Dashboard project" onerror="this.src='https://placehold.co/500x350/2563EB/FFFFFF?text=Finance+Dashboard'"></div>
+        <div class="project-info">
+          <h3>Finance Dashboard</h3>
+          <p>An analytics dashboard for tracking budgets, transactions, and reports in real time.</p>
+          <div class="tech-tags"><span>HTML5</span><span>JS</span><span>MySQL</span></div>
+          <div class="project-links">
+            <a href="#" class="proj-link">Live Demo</a>
+            <a href="#" class="proj-link">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="corporate" data-reveal>
+        <div class="project-image"><img src="images/project2.jpg" alt="Corporate business website" onerror="this.src='https://placehold.co/500x350/0F172A/38BDF8?text=Corporate+Site'"></div>
+        <div class="project-info">
+          <h3>Corporate Business Site</h3>
+          <p>A multi-page corporate website with service pages, careers section, and a CMS-driven blog.</p>
+          <div class="tech-tags"><span>PHP</span><span>MySQL</span><span>Bootstrap</span></div>
+          <div class="project-links">
+            <a href="#" class="proj-link">Live Demo</a>
+            <a href="#" class="proj-link">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="ui" data-reveal>
+        <div class="project-image"><img src="images/project3.jpg" alt="Banking app UI design" onerror="this.src='https://placehold.co/500x350/38BDF8/0F172A?text=Banking+App+UI'"></div>
+        <div class="project-info">
+          <h3>Banking App UI</h3>
+          <p>A modern mobile banking interface concept focused on clarity and accessibility.</p>
+          <div class="tech-tags"><span>Figma</span><span>Photoshop</span></div>
+          <div class="project-links">
+            <a href="#" class="proj-link">Live Demo</a>
+            <a href="#" class="proj-link">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="web" data-reveal>
+        <div class="project-image"><img src="images/project4.jpg" alt="Inventory management system" onerror="this.src='https://placehold.co/500x350/2563EB/F8FAFC?text=Inventory+System'"></div>
+        <div class="project-info">
+          <h3>Inventory Management System</h3>
+          <p>A full-stack web app to manage stock levels, suppliers, and purchase orders.</p>
+          <div class="tech-tags"><span>PHP</span><span>JS</span><span>MySQL</span></div>
+          <div class="project-links">
+            <a href="#" class="proj-link">Live Demo</a>
+            <a href="#" class="proj-link">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="corporate" data-reveal>
+        <div class="project-image"><img src="images/project5.jpg" alt="HR administration portal" onerror="this.src='https://placehold.co/500x350/0F172A/2563EB?text=HR+Portal'"></div>
+        <div class="project-info">
+          <h3>HR Administration Portal</h3>
+          <p>An internal portal for employee records, leave requests, and payroll summaries.</p>
+          <div class="tech-tags"><span>HTML5</span><span>PHP</span><span>MySQL</span></div>
+          <div class="project-links">
+            <a href="#" class="proj-link">Live Demo</a>
+            <a href="#" class="proj-link">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="ui" data-reveal>
+        <div class="project-image"><img src="images/project6.jpg" alt="Portfolio landing page design" onerror="this.src='https://placehold.co/500x350/38BDF8/FFFFFF?text=Landing+Page'"></div>
+        <div class="project-info">
+          <h3>SaaS Landing Page</h3>
+          <p>A conversion-focused landing page design with glassmorphism accents and clear CTAs.</p>
+          <div class="tech-tags"><span>HTML5</span><span>CSS3</span><span>JS</span></div>
+          <div class="project-links">
+            <a href="#" class="proj-link">Live Demo</a>
+            <a href="#" class="proj-link">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== EXPERIENCE SECTION ===================== -->
+<section class="experience section" id="experience">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <p class="section-eyebrow">Experience</p>
+      <h2 class="section-title">Where I've worked</h2>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item" data-reveal>
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2023 — Present</span>
+          <h3>Senior Web Developer</h3>
+          <h4>Nexora Technologies</h4>
+          <ul>
+            <li>Led frontend architecture for 3 enterprise client platforms.</li>
+            <li>Mentored a team of 4 junior developers on best practices.</li>
+            <li>Reduced average page load time by 40% through optimization.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-reveal>
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2021 — 2023</span>
+          <h3>Web Developer</h3>
+          <h4>BrightPath Solutions</h4>
+          <ul>
+            <li>Developed responsive websites for finance and banking clients.</li>
+            <li>Built reusable UI component libraries used across 10+ projects.</li>
+            <li>Collaborated with designers to implement pixel-perfect layouts.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-reveal>
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2020 — 2021</span>
+          <h3>Junior Frontend Developer</h3>
+          <h4>PixelWorks Studio</h4>
+          <ul>
+            <li>Assisted in building landing pages and marketing sites.</li>
+            <li>Learned modern JavaScript tooling and version control workflows.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== EDUCATION SECTION ===================== -->
+<section class="education section section-alt" id="education">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <p class="section-eyebrow">Education</p>
+      <h2 class="section-title">Academic background</h2>
+    </div>
+
+    <div class="timeline timeline-edu">
+      <div class="timeline-item" data-reveal>
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <!-- <span class="timeline-date">2016 — 2020</span> -->
+          <h3>Software Engineering Diploma</h3>
+          <h4>Duration: 2 Years</h4>
+          <!-- <p>Grade: 3.8 / 4.0 GPA — Major in Software Engineering</p> -->
+        </div>
+      </div>
+
+      <div class="timeline-item" data-reveal>
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2014 — 2016</span>
+          <h3>Intermediate (Pre-Engineering)</h3>
+          <h4>Karachi Board of Intermediate Education</h4>
+          <p>Grade: A+</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CERTIFICATES SECTION =====================
+<section class="certificates section" id="certificates">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <p class="section-eyebrow">Certificates</p>
+      <h2 class="section-title">Professional certifications</h2>
+    </div>
+
+    <div class="certificates-grid">
+      <div class="cert-card" data-reveal>
+        <div class="cert-image"><img src="images/cert1.jpg" alt="Full Stack Web Development certificate" onerror="this.src='https://placehold.co/400x280/2563EB/FFFFFF?text=Full+Stack+Cert'"></div>
+        <h3>Full Stack Web Development</h3>
+        <p>Meta · 2022</p>
+      </div>
+      <div class="cert-card" data-reveal>
+        <div class="cert-image"><img src="images/cert2.jpg" alt="JavaScript Algorithms certificate" onerror="this.src='https://placehold.co/400x280/0F172A/38BDF8?text=JavaScript+Cert'"></div>
+        <h3>JavaScript Algorithms &amp; Data Structures</h3>
+        <p>freeCodeCamp · 2021</p>
+      </div>
+      <div class="cert-card" data-reveal>
+        <div class="cert-image"><img src="images/cert3.jpg" alt="Responsive Web Design certificate" onerror="this.src='https://placehold.co/400x280/38BDF8/0F172A?text=Responsive+Design'"></div>
+        <h3>Responsive Web Design</h3>
+        <p>freeCodeCamp · 2020</p>
+      </div>
+      <div class="cert-card" data-reveal>
+        <div class="cert-image"><img src="images/cert4.jpg" alt="Database Design certificate" onerror="this.src='https://placehold.co/400x280/2563EB/F8FAFC?text=Database+Cert'"></div>
+        <h3>Database Design with MySQL</h3>
+        <p>Coursera · 2021</p>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- ===================== ACHIEVEMENTS SECTION ===================== -->
+<section class="achievements section section-alt" id="achievements">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <p class="section-eyebrow">Achievements</p>
+      <h2 class="section-title">Milestones I'm proud of</h2>
+    </div>
+
+    <div class="achievements-grid">
+      <div class="achievement-card" data-reveal>
+        <div class="achievement-icon">🏆</div>
+        <h3>Best Web App — Regional Hackathon</h3>
+        <p>Won 1st place among 40+ teams for a civic-tech web application.</p>
+      </div>
+      <div class="achievement-card" data-reveal>
+        <div class="achievement-icon">🚀</div>
+        <h3>Employee of the Year</h3>
+        <p>Recognized at Nexora Technologies for outstanding project delivery.</p>
+      </div>
+      <div class="achievement-card" data-reveal>
+        <div class="achievement-icon">⭐</div>
+        <h3>Top Contributor</h3>
+        <p>Ranked top open-source contributor in an internal engineering guild.</p>
+      </div>
+      <div class="achievement-card" data-reveal>
+        <div class="achievement-icon">🎓</div>
+        <h3>Dean's List Honoree</h3>
+        <p>Achieved Dean's List distinction for 4 consecutive semesters.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TESTIMONIALS SECTION ===================== -->
+<section class="testimonials section" id="testimonials">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <p class="section-eyebrow">Testimonials</p>
+      <h2 class="section-title">What clients &amp; colleagues say</h2>
+    </div>
+
+    <div class="testimonial-slider" data-reveal>
+      <div class="testimonial-track" id="testimonialTrack">
+        <div class="testimonial-card">
+          <p>"John delivered our finance platform ahead of schedule with impeccable attention to detail. A true professional."</p>
+          <div class="testimonial-author">
+            <img src="images/client1.jpg" alt="Sarah Johnson" onerror="this.src='https://placehold.co/60x60/2563EB/FFFFFF?text=SJ'">
+            <div><h4>Sarah Johnson</h4><span>Product Manager, Finlytics</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <p>"Exceptional communication and a strong eye for UI detail. Our corporate site has never looked better."</p>
+          <div class="testimonial-author">
+            <img src="images/client2.jpg" alt="Michael Lee" onerror="this.src='https://placehold.co/60x60/0F172A/38BDF8?text=ML'">
+            <div><h4>Michael Lee</h4><span>CEO, Nexora Technologies</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <p>"Reliable, skilled, and a great collaborator. John consistently goes above and beyond on every sprint."</p>
+          <div class="testimonial-author">
+            <img src="images/client3.jpg" alt="Amina Raza" onerror="this.src='https://placehold.co/60x60/38BDF8/0F172A?text=AR'">
+            <div><h4>Amina Raza</h4><span>Lead Designer, BrightPath</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-dots" id="testimonialDots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT SECTION ===================== -->
+<section class="contact section section-alt" id="contact">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <p class="section-eyebrow">Contact</p>
+      <h2 class="section-title">Let's work together</h2>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info" data-reveal>
+        <div class="contact-item">
+          <span class="contact-icon">📞</span>
+          <div><h4>Phone</h4><p>03243263237</p></div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">✉️</span>
+          <div><h4>Email</h4><p>faridilaraib250@gmail.com</p></div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">📍</span>
+          <div><h4>Address</h4><p>Karachi, Sindh, Pakistan</p></div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">💼</span>
+          <div><h4>LinkedIn</h4><p>LinkedIn profile</p></div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">🐙</span>
+          <div><h4>GitHub</h4><p>GitHub profile</p></div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">💬</span>
+          <div><h4>WhatsApp</h4><p>03243263237</p></div>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm" data-reveal novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder=" " required>
+            <label for="name">Full Name</label>
+            <span class="form-error" id="nameError"></span>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder=" " required>
+            <label for="email">Email Address</label>
+            <span class="form-error" id="emailError"></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="text" id="subject" name="subject" placeholder=" " required>
+          <label for="subject">Subject</label>
+          <span class="form-error" id="subjectError"></span>
+        </div>
+        <div class="form-group">
+          <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
+          <label for="message">Your Message</label>
+          <span class="form-error" id="messageError"></span>
+        </div>
+        <button type="submit" class="btn btn-primary ripple">Send Message</button>
+        <p class="form-success" id="formSuccess">✓ Your message has been sent successfully!</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="#home" class="logo">Laraib<span>Faridi</span></a>
+      <p>Software Engineer &amp; Web Developer crafting elegant digital experiences.</p>
+      <div class="footer-socials">
+        <a href="#" aria-label="GitHub" class="social-icon"><svg viewBox="0 0 24 24"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.1 3.29 9.4 7.86 10.94.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.1-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.69 5.4-5.25 5.69.41.36.78 1.08.78 2.17 0 1.57-.01 2.83-.01 3.22 0 .3.2.66.79.55A10.51 10.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg></a>
+        <a href="#" aria-label="LinkedIn" class="social-icon"><svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a>
+        <a href="#" aria-label="Twitter/X" class="social-icon"><svg viewBox="0 0 24 24"><path d="M18.9 2H22l-7.4 8.5L23.3 22h-6.8l-5.3-6.9L4.9 22H1.8l7.9-9.1L1 2h7l4.8 6.3L18.9 2zm-1.2 18h1.9L7.4 4h-2l12.3 16z"/></svg></a>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="footer-links">
+      <h4>Resources</h4>
+      <a href="assets/Laraib_Faridi_CV.pdf" download>Download CV</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#education">Education</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> Laraib Faridi. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- ===================== BACK TO TOP ===================== -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
